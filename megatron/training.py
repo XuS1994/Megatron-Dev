@@ -16,6 +16,8 @@ import time
 # The earliest we can measure the start time.
 _TRAIN_START_TIME = time.time()
 import torch
+from torch.profiler import profile, record_function, ProfilerActivity
+
 
 from megatron import get_args
 from megatron import get_signal_handler
